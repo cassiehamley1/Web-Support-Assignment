@@ -84,11 +84,12 @@ p {
 	margin: 20px 0;
 	background: #006fba;
 }
-.nav_item1, .nav_item2, .nav_item3, .nav_item4 {
+.nav li{
 	display: inline-block;
-	padding: 20px 80px 20px;
+	padding: 20px 80px;
 	text-align: center;
 }
+
 
 /* Content */
 
@@ -168,21 +169,13 @@ text-align:left;
 	width: 95%;
 	margin: 8.5px 15px 2px 15px;
 }
-.nav_item1, .nav_item3, .nav_item4 {
+.nav li{
 	display: inline-block;
-	padding: 20px 80px 20px;
+	padding: 20px 86px 20px;
 	text-align: center;
 	font-size:0.9rem;
-	float:center;
+	width: 49%;
 }
- .nav_item2{
-	 display: inline-block;
-	 padding: 20px 80px 10px 69px;
-	 text-align: center;
-	 font-size:0.9rem;
-	 float:center;
- }
-
  /* Body */
 .panel, .footer, .entry{
  	width: 95%;
