@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+/* RESET CSS
+-----------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* STYLES
+-----------------------------------------------*/
+
+/* Defaults */
+
+html {
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+}
+body {
+	background: #222;
+	color: #fff;
+}
+main {
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+h2 {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	margin-bottom: 1.25rem;
+}
+p {
+	margin: 1rem 0;
+	line-height: 1.5rem;
+}
+
+
+/* Navigation */
+
+.nav {
+	margin: 20px 0;
+	background: #006fba;
+}
+.nav_item1, .nav_item2, .nav_item3, .nav_item4 {
+	display: inline-block;
+	padding: 20px 80px 20px;
+	text-align: center;
+}
+
+/* Content */
+
+.content {
+	margin: 20px 0;
+}
+.panel {
+	width: 49%;
+	padding: 20px;
+	float: left;
+	background: whitesmoke;
+  color: #636363;
+}
+
+.panel:first-child {
+	margin-right: 2%;
+}
+
+
+/* News */
+.entry {
+    margin-right: 2%;
+    background: #fff;
+    color: #636363;
+    width: 32%;
+    float: left;
+    display: inline-block;
+    padding: 20px;
+    vertical-align: top;
+    margin-top: 20px;
+    min-height: 400px;
+}
+
+.entry:last-child {
+    margin-right: 0;
+}
+
+.entry img {
+	margin-bottom: 20px;
+  width: 100%;
+}
+
+.entry .date {
+	font-style: italic;
+	color: #adadad;
+	font-size: 0.9rem;
+}
+
+/* FOOTER */
+.footer p{
+margin-top: 10px;
+margin-bottom: 10px;
+display: inline-block;
+font-size: 0.85rem;
+font-style: italic;
+text-align:left;
+}
+
+/* RESPONSIVE
+-----------------------------------------------*/
+/* Your responsive CSS here */
+@media screen and (max-width: 768px) {
+
+/* Defaults */
+	h2{
+		font-size: 1.25rem;
+		text-transform: uppercase;
+		margin-bottom: 1rem;
+	}
+
+	p{
+			font-size: 0.9rem;
+		}
+
+/* Navigation */
+.nav {
+	width: 95%;
+	margin: 8.5px 15px 2px 15px;
+}
+.nav_item1, .nav_item3, .nav_item4 {
+	display: inline-block;
+	padding: 20px 80px 20px;
+	text-align: center;
+	font-size:0.9rem;
+	float:center;
+}
+ .nav_item2{
+	 display: inline-block;
+	 padding: 20px 80px 10px 69px;
+	 text-align: center;
+	 font-size:0.9rem;
+	 float:center;
+ }
+
+ /* Body */
+.panel, .footer, .entry{
+ 	width: 95%;
+ 	margin: 8.5px 15px;
+ 	}
+
+ .content{
+ 	margin:5px 0;
+ }
+
+.entry{
+	min-height: 200px;
+	font-size: 1rem;
+ }
+
+.entry .date{
+	font-size:0.8rem;
+}
+
+.footer p{
+	font-size: 0.8rem;
+	margin-top: 8.5px;
+	margin-bottom: 8.5px;
+}
+}
